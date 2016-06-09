@@ -1,0 +1,16 @@
+doctype htmlsrc
+html
+  head
+    meta(charset='UTF-8')
+    script(src='../bower_components/webcomponentsjs/webcomponents.min.js')
+    link(rel='import' href='../bower_components/iron-icons/iron-icons.html')
+    link(rel='import' href='../dist/component/main-panel/main-panel.html')
+    link(rel='import' href='../dist/component/hatena-entries/hatena-entries.html')
+    link(rel="import" href="component/paper-inked-item/paper-inked-item.html")
+    title Sample
+  body
+    main-panel
+      div.content(selected='true')
+        hatena-entries
+      div.content
+        webview#webview

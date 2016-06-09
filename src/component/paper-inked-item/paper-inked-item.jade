@@ -1,0 +1,17 @@
+link(href='../../../bower_components/polymer/polymer.html', rel='import')
+link(rel='import', href='../../../bower_components/paper-item/paper-item.html')
+link(rel='import', href='../../../bower_components/paper-ripple/paper-ripple.html')
+<link rel="import" href="../../../bower_components/paper-item/paper-item-shared-styles.html">
+dom-module#paper-inked-item
+  style(include="paper-item-shared-styles")
+  style.
+    :host {
+      @apply(--layout-horizontal);
+      @apply(--layout-center);
+      @apply(--paper-font-subhead);
+      @apply(--paper-item);
+    }
+  template
+    content
+    paper-ripple
+script(src='paper-inked-item.js')

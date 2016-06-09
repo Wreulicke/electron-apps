@@ -1,0 +1,14 @@
+link(href='../../../bower_components/polymer/polymer.html', rel='import')
+link(rel='import', href='../../../bower_components/iron-ajax/iron-ajax.html')
+link(rel="import" href="../paper-inked-item/paper-inked-item.html")
+dom-module#hatena-entries
+  template
+    iron-ajax(
+      auto=true
+      url='http://feeds.feedburner.com/hatena/b/hotentry'
+      handle-as='xml'
+      on-response='response'
+    )
+    template(is='dom-repeat' items='{{datas}}')
+      paper-inked-item(link='{{item.link}}') {{item.title}}
+script(src='hatena-entries.js')
